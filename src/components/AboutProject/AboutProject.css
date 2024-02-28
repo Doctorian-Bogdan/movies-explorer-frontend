@@ -1,0 +1,124 @@
+.aboutproject {
+  background-color: #202020;
+}
+
+.aboutproject__container {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.aboutproject__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0 110px 0;
+}
+
+.aboutproject__column {
+  max-width: 550px;
+}
+
+.aboutproject__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
+  letter-spacing: -1px;
+  padding-bottom: 26px;
+}
+
+.aboutproject__text {
+  max-width: 550px;
+}
+
+.aboutproject__progressline {
+  display: flex;
+}
+
+.aboutproject__backend {
+  width: 20%;
+}
+
+.aboutproject__shortline {
+  background-color: #3DDC84;
+  color: #000;
+  font-size: 14px;
+  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutproject__frontend {
+  width: 80%;
+}
+
+.aboutproject__longline {
+  background-color: #303030;
+  font-size: 14px;
+  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutproject__caption {
+  font-weight: 500;
+  font-size: 14px;
+  color: #8B8B8B;
+  text-align: center;
+  padding-top: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutproject__container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .aboutproject__column {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .aboutproject__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .aboutproject__wrapper {
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 56px;
+  }
+
+  .aboutproject__subtitle {
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 21.78px;
+  }
+
+  .aboutproject__backend {
+    width: 34%;
+  }
+
+  .aboutproject__shortline {
+    font-size: 11px;
+    line-height: 13.31px;
+  }
+
+  .aboutproject__frontend {
+    width: 66%;
+  }
+
+  .aboutproject__longline {
+    font-size: 11px;
+    line-height: 13.31px;
+  }
+
+  .aboutproject__caption {
+    font-size: 11px;
+    line-height: 13.31px;
+  }
+}
