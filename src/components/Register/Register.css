@@ -65,6 +65,10 @@
   box-sizing: border-box;
 }
 
+.register__input:focus {
+  outline: 1px solid #fff;
+}
+
 .register__button {
   margin-top: 69px;
   border-radius: 3px;

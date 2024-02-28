@@ -69,6 +69,10 @@
   color: #fff;
 }
 
+.login__input:focus {
+  outline: 1px solid #fff;
+}
+
 .login__button {
   margin-top: 179px;
   border-radius: 3px;
