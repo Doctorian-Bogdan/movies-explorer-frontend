@@ -12,6 +12,7 @@ function Profile({ logout }) {
               className="profile__input"
               type="text"
               name="name"
+              id="name"
               placeholder="Имя"
               minLength="2"
               maxLength="30"
@@ -25,6 +26,7 @@ function Profile({ logout }) {
               className="profile__input"
               type="email"
               name="email"
+              id="email"
               placeholder="pochta@yandex.ru"
               required
             />

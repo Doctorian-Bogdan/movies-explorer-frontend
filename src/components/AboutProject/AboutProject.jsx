@@ -32,17 +32,17 @@ function AboutProject() {
             <div className="aboutproject__shortline">
               1 неделя
             </div>
-            <div className="aboutproject__caption">
+            <p className="aboutproject__caption">
               Back-end
-            </div>
+            </p>
           </div>
           <div className="aboutproject__frontend">
             <div className="aboutproject__longline">
               4 недели
             </div>
-            <div className="aboutproject__caption">
+            <p className="aboutproject__caption">
               Front-end
-            </div>
+            </p>
           </div>
         </div>
       </div>

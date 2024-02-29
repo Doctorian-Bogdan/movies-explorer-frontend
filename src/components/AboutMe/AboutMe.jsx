@@ -24,7 +24,7 @@ function AboutMe() {
               </p>
             </div>
             <div className="aboutme__resume-block">
-              <a className="aboutme__link" href="https://github.com/Doctorian-Bogdan">
+              <a className="aboutme__link" target="_blank" href="https://github.com/Doctorian-Bogdan" rel="noreferrer">
                 Github
               </a>
             </div>

@@ -17,6 +17,7 @@ function Login({ login }) {
               className="login__input"
               type="email"
               name="email"
+              id="email"
               placeholder="E-mail"
               required
             />
@@ -27,6 +28,7 @@ function Login({ login }) {
               className="login__input"
               type="password"
               name="password"
+              id="password"
               placeholder="Пароль"
               minLength="4"
               maxLength="30"

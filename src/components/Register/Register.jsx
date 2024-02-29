@@ -17,6 +17,7 @@ function Register() {
               className="register__input"
               type="text"
               name="name"
+              id="name"
               placeholder="Имя"
               minLength="2"
               maxLength="30"
@@ -29,6 +30,7 @@ function Register() {
               className="register__input"
               type="email"
               name="email"
+              id="email"
               placeholder="E-mail"
               required
             />
@@ -39,6 +41,7 @@ function Register() {
               className="register__input"
               type="password"
               name="password"
+              id="password"
               placeholder="Пароль"
               minLength="4"
               maxLength="30"

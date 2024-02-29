@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="app__section-container">
+      <div className="app__section-container footer__container">
         <p className="footer__title">
           Учебный проект Яндекс.Практикум х BeatFilm.
         </p>

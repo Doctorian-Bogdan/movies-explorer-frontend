@@ -62,6 +62,7 @@
 }
 
 .aboutproject__caption {
+  margin: 0;
   font-weight: 500;
   font-size: 14px;
   color: #8B8B8B;
@@ -69,10 +70,14 @@
   padding-top: 14px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .aboutproject__container {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .aboutproject__wrapper {
+    padding: 70px 0 93px 0;
   }
 
   .aboutproject__column {

@@ -50,7 +50,7 @@ html {
 @media screen and (max-width: 768px) {
   .app__section-container {
     max-width: 768px;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .app__section-text {
@@ -66,9 +66,14 @@ html {
     padding: 0 14px;
   }
 
+  .app__section-contents {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
+
   .app__section-text {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 16px;
   }
 
   .app__section-title {

@@ -45,12 +45,23 @@
 }
 
 .movies-card__button:hover {
-  opacity: 0.8;
+  background-image: url("../../images/moviesCardLikeActive.svg");
 }
 
 @media screen and (max-width: 768px) {
   .movies-card__item {
     max-width: 339px;
+    padding-bottom: 14px;
+  }
+
+  .movies-card__container {
+    padding: 14px 14px 0 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .movies-card__duration {
+    padding-top: 15px;
   }
 }
 

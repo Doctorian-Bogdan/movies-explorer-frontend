@@ -1,6 +1,6 @@
 .search-form {
   background-color: #202020;
-  padding-top: 134px;
+  padding-top: 60px;
 }
 
 .search-form__field {
@@ -45,4 +45,25 @@
 
 .search-form__button:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .search-form {
+    padding-top: 80px;
+  }
+
+  .search-form__form {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search-form__form {
+    padding: 0 14px;
+  }
+
+  .search-form__input {
+    font-size: 11px;
+    line-height: 17px;
+  }
 }

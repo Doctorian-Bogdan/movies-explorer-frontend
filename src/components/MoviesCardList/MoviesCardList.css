@@ -26,3 +26,24 @@
   color: #fff;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .movies-cards__container {
+    padding: 0 30px;
+  }
+
+  .movies-cards__list {
+    column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .movies-cards__container {
+    padding: 0 10px;
+  }
+
+  .movies-cards__list {
+    padding: 50px 0 10px 0;
+    row-gap: 14px;
+  }
+}

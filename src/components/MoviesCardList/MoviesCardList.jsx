@@ -8,7 +8,7 @@ function MoviesCardList() {
 
   return (
     <section className="movies-cards">
-      <div className="app__section-container">
+      <div className="app__section-container movies-cards__container">
         <ul className="movies-cards__list">
           {location.pathname === '/movies'
             ? movies.map((movie) => <MoviesCard key={movie._id} movie={movie} />)

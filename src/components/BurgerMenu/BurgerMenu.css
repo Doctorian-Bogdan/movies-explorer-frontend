@@ -89,6 +89,7 @@
   display: flex;
   align-items: center;
   gap: 7px;
+  text-decoration: none;
 }
 
 .burger-menu__link_text {

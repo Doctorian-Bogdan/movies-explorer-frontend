@@ -50,6 +50,15 @@
     padding-bottom: 90px;
   }
 
+  .techs__title {
+    padding: 80px 0 22px 0;
+  }
+
+  .techs__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
   .techs__list {
     flex-wrap: wrap;
     justify-content: center;
@@ -77,6 +86,11 @@
 
   .techs__title {
     padding: 60px 0 24px 0;
+  }
+
+  .techs__text {
+    font-size: 11px;
+    line-height: 16px;
   }
 
   .techs__list {
