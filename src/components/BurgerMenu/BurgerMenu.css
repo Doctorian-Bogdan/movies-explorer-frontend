@@ -1,0 +1,142 @@
+.burger-menu__button {
+  background: url(../../images/burger.svg) no-repeat;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border: none;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.burger-menu__button:hover {
+  opacity: 0.8;
+}
+
+.burger-menu__close-button {
+  background: url(../../images/close.svg);
+  position: absolute;
+  background-size: cover;
+  top: 25.44px;
+  right: 26.44px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  border: none;
+  padding: 0;
+}
+
+.burger-menu__close-button:hover {
+  opacity: 0.8;
+}
+
+.burger-menu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-menu__wrapper {
+  background-color: #202020;
+  width: 520px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 159px 90px 89px;
+  box-sizing: border-box;
+}
+
+.burger-menu__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  row-gap: 30px;
+}
+
+.burger-menu__list__item {
+  text-align: center;
+}
+
+.burger-menu__link {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.burger-menu__link:hover {
+  opacity: 0.7;
+}
+
+.burger-menu__link_active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 4px;
+}
+
+.burger-menu__link_profile {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+}
+
+.burger-menu__link_text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.burger-menu__link_profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #313131;
+}
+
+.burger-menu__link_profile-img:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-menu__button {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .burger-menu__links {
+    row-gap: 26px;
+  }
+
+  .burger-menu__close-button {
+    top: 17.44px;
+    right: 18.44px;
+  }
+
+  .burger-menu__link_active {
+    max-width: 72px;
+    padding-bottom: 7px;
+  }
+
+  .burger-menu__button {
+    width: 40px;
+    height: 43px;
+    background-size: 35px 51px;
+  }
+}
