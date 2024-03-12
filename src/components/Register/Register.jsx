@@ -4,6 +4,7 @@ import { validate } from 'email-validator';
 import logo from '../../images/logo.svg';
 import { regName } from '../../utils/constants';
 import auth from '../../utils/Auth';
+import MainApi from '../../utils/MainApi';
 
 function Register({ setIsLoggedIn, setCurrentUser }) {
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ function Register({ setIsLoggedIn, setCurrentUser }) {
           setPassword('');
           localStorage.setItem('jwt', res.token);
           setIsLoggedIn(true);
-          setCurrentUser(res);
+          MainApi.getUserInfo().then((user) => setCurrentUser(user));
           navigate('/movies', { replace: true });
         });
       })

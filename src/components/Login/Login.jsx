@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { validate } from 'email-validator';
 import logo from '../../images/logo.svg';
 import auth from '../../utils/Auth';
+import MainApi from '../../utils/MainApi';
 
 function Login({ setCurrentUser, setIsLoggedIn }) {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ function Login({ setCurrentUser, setIsLoggedIn }) {
         setPassword('');
         localStorage.setItem('jwt', res.token);
         setIsLoggedIn(true);
-        setCurrentUser(res);
+        MainApi.getUserInfo().then((user) => setCurrentUser(user));
         navigate('/movies', { replace: true });
       })
       .catch((err) => {

@@ -24,7 +24,8 @@ function Profile({ setCurrentUser, setIsLoggedIn }) {
 
   const [isRequestSending, setIsRequestSending] = useState(false);
 
-  const submitButtonStatus = isNameValid && isEmailValid;
+  // eslint-disable-next-line max-len
+  const submitButtonStatus = isNameValid && isEmailValid && ((name !== currentUser.name) || (email !== currentUser.email));
 
   function handleLogout() {
     setCurrentUser({});

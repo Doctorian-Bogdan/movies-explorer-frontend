@@ -33,12 +33,31 @@ function Movies({ windowWidth }) {
   const [isLoaderOpen, setIsLoaderOpen] = useState(false);
 
   function handleSaveMovie(movieData) {
-    MainApi.saveMovie(movieData).then((res) => setSavedMovies([...savedMovies, res]));
+    let isSaved = false;
+
+    MainApi.saveMovie(movieData).then((res) => {
+      setSavedMovies([...savedMovies, res]);
+      isSaved = true;
+      return isSaved;
+    })
+      .catch(() => {
+        isSaved = false;
+        return isSaved;
+      });
   }
 
   function handleDeleteMovie(movieId) {
-    // eslint-disable-next-line max-len
-    MainApi.deleteMovie(movieId).then((deletedMovie) => setSavedMovies((state) => state.filter((movie) => movie._id !== deletedMovie._id)));
+    let isSaved = false;
+
+    MainApi.deleteMovie(movieId).then((deletedMovie) => {
+      setSavedMovies((state) => state.filter((movie) => movie._id !== deletedMovie._id));
+      isSaved = false;
+      return isSaved;
+    })
+      .catch(() => {
+        isSaved = true;
+        return isSaved;
+      });
   }
 
   useEffect(() => {

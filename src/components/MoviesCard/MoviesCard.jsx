@@ -13,13 +13,11 @@ function MoviesCard({
   const [isMovieSaved, setIsMovieSaved] = useState(false);
 
   function saveMovie() {
-    handleSaveMovie(movieData);
-    setIsMovieSaved(true);
+    setIsMovieSaved(handleSaveMovie(movieData));
   }
 
   function deleteMovie() {
-    handleDeleteMovie(savedId);
-    setIsMovieSaved(false);
+    setIsMovieSaved(handleDeleteMovie(savedId));
   }
 
   function deleteSavedMovie() {
