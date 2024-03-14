@@ -33,30 +33,20 @@ function Movies({ windowWidth }) {
   const [isLoaderOpen, setIsLoaderOpen] = useState(false);
 
   function handleSaveMovie(movieData) {
-    let isSaved = false;
-
     MainApi.saveMovie(movieData).then((res) => {
       setSavedMovies([...savedMovies, res]);
-      isSaved = true;
-      return isSaved;
     })
-      .catch(() => {
-        isSaved = false;
-        return isSaved;
+      .catch((err) => {
+        console.log(err);
       });
   }
 
   function handleDeleteMovie(movieId) {
-    let isSaved = false;
-
     MainApi.deleteMovie(movieId).then((deletedMovie) => {
       setSavedMovies((state) => state.filter((movie) => movie._id !== deletedMovie._id));
-      isSaved = false;
-      return isSaved;
     })
-      .catch(() => {
-        isSaved = true;
-        return isSaved;
+      .catch((err) => {
+        console.log(err);
       });
   }
 
