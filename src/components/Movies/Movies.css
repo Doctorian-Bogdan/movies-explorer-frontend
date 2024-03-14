@@ -1,0 +1,27 @@
+.movies__error {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EE3465;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.movies__error-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.movies__error-message{
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 26px;
+}
