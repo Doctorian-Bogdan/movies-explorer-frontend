@@ -1,5 +1,6 @@
 .movies-card__item {
   max-width: 364px;
+  width: 100%;
   background-color: #222222;
   border-radius: 6px;
   box-shadow: 0 4px 30px 0 rgba(0,0,0,8%);
@@ -10,6 +11,8 @@
 .movies-card__image {
   object-fit: cover;
   width: 100%;
+  aspect-ratio: 360/201;
+  object-position: center;
 }
 
 .movies-card__container {
@@ -42,6 +45,21 @@
   background-color: transparent;
   transition: 0.3s;
   cursor: pointer;
+}
+
+.movies-card__button_delete {
+  border: none;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  background-image: url("../../images/moviesCardLikeDelete.svg");
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.movies-card__button_active {
+  background-image: url("../../images/moviesCardLikeActive.svg");
 }
 
 .movies-card__button:hover {

@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import Navigation from '../Navigation/Navigation';
 
-function Header({ loggedIn }) {
+function Header({ isLoggedIn }) {
   const location = useLocation();
 
   return (
@@ -13,7 +13,7 @@ function Header({ loggedIn }) {
           <img className="header__logo" src={logo} alt="логотип" />
         </Link>
         <nav className="header__navigation">
-          {loggedIn ? <Navigation /> : (
+          {isLoggedIn ? <Navigation /> : (
             <div className="header__links">
               <Link to="/signup" className="header__link">Регистрация</Link>
               <Link to="/signin" className="header__link header__link_type_login">Войти</Link>
